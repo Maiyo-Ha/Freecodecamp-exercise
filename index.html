@@ -1,0 +1,194 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Sample Survey Form</h1>
+    <p id="description" class="description text-center">
+      Please fill the below form to help us improve our services
+    </p>
+  <link rel="stylesheet" href="style.css">
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Full names</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Please fill in your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Please fill in your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(in years)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Please select your age"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <p>What is the status of your employment?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Please fill in the most appropriate option</option>
+        <option value="student">Student</option>
+        <option value="Full-time job">Employed (Full-time)</option>
+        <option value="part-time job">Employed (Part-time)</option>
+        <option value="not sure">Not Sure</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend our services to your family and friends?</p>
+      <label>
+        <input
+          name="recommendation"
+          value="Most-likely"
+          type="radio"
+          class="input-radio"
+        />Most Likely</label
+      >
+      <label>
+        <input
+          name="recommendation"
+          value="Less-likely"
+          type="radio"
+          class="input-radio"
+        />Less Likely</label
+      >
+      <label>
+        <input
+          name="recommendation"
+          value="Maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="recommendation"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which of our services best suits you?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select what best suits you</option>
+        <option value="SEO-optimization">SEO Optimization</option>
+        <option value="web-design">Web Design</option>
+        <option value="domain-hosting">Domain Hosting</option>
+        <option value="bulk-sms">Bulk SMS</option>
+        <option value="Internet-marketing">Internet Marketing</option>
+        <option value="social-media-marketing">Social Media Marketing</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like us to improve?
+        <span class="clue">(Select all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="SEO-optimization"
+          type="checkbox"
+          class="input-checkbox"
+        />SEO Optimization</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="web-design"
+          type="checkbox"
+          class="input-checkbox"
+        />Web Design</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="domain-hosting"
+          type="checkbox"
+          class="input-checkbox"
+        />Domain Hosting</label>
+      <label>
+        <input
+          name="prefer"
+          value="bulk-sms"
+          type="checkbox"
+          class="input-checkbox"
+        />Bulk SMS</label>
+      <label>
+        <input
+          name="prefer"
+          value="internet-marketingy"
+          type="checkbox"
+          class="input-checkbox"
+        />Internet Marketing</label>
+      <label>
+        <input
+          name="prefer"
+          value="social-media-marketing"
+          type="checkbox"
+          class="input-checkbox"
+        />Social Media Marketing
+      </label>
+      <label
+        ><input
+          name="prefer"
+          value="website-maintenance"
+          type="checkbox"
+          class="input-checkbox"
+        />Website Maintenance</label>
+      <label
+        ><input
+          name="prefer"
+          value="customer-service"
+          type="checkbox"
+          class="input-checkbox"
+        />Customer Service</label>
+    </div>
+
+    <div class="form-group">
+      <p>Any other comments or suggestions for us?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Leave us your comments and suggestions..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
